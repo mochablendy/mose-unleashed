@@ -1,0 +1,9 @@
+﻿<Controls:MetroWindow x:Class="Mose.MainWindow"
+        xmlns:Controls="clr-namespace:MahApps.Metro.Controls;assembly=MahApps.Metro"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Button Content="Mose" HorizontalAlignment="Left" Margin="229,143,0,0" VerticalAlignment="Top" Width="75"/>
+    </Grid>
+</Controls:MetroWindow>
