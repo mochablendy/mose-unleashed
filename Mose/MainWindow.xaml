@@ -12,14 +12,13 @@
             </Controls:Flyout>
         </Controls:FlyoutsControl>
     </Controls:MetroWindow.Flyouts>
-    <Grid>
-        <DockPanel LastChildFill="False" Margin="0,283,0,0" VerticalAlignment="Bottom">
-            <Button Content="Change" Height="37" VerticalAlignment="Top" Width="75"/>
-            <Image Height="37" VerticalAlignment="Top" Width="100"/>
-            <Label Content="Label" Height="37" VerticalAlignment="Top" Width="106"/>
-            <Label Content="Label" Height="37" VerticalAlignment="Top" Width="106"/>
-        </DockPanel>
-        <TabControl Margin="0,0,0,42">
+    <Grid Margin="6">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+       
+        <TabControl Grid.Row="0">
             <TabItem Header="TabItem">
                 <Grid Background="#FFE5E5E5">
                     <interop:AirspaceDecorator AirspaceMode="Redirect"
@@ -41,5 +40,16 @@
                 </Grid>
             </TabItem>
         </TabControl>
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="6">
+            <StackPanel.Resources>
+                <Style TargetType="Button">
+                    <Setter Property="Padding" Value="12 6"/>
+                </Style>
+            </StackPanel.Resources>
+            <Button Content="Change" FontSize="14" FontWeight="Normal" FontFamily="Meiryo UI"/>
+            <Image  Width="100"/>  
+            <Label Content="aaa_bb.sto"/>
+            <Label Content="DDefG_2014s14.sto"/>
+        </StackPanel>
     </Grid>
 </Controls:MetroWindow>
